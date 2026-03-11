@@ -52,13 +52,19 @@ const projects = document.querySelectorAll('.project');
 //Loop through buttons
 filterButtons.forEach(function(button) {
     button.addEventListener('click', function() {
-
+        //Remove active class from all buttons
+        filterButtons.forEach(function(btn){
+            btn.classList.remove('active');
+        });
+        //Add active class to the clicked button
+        button.classList.add('active');
+        //Getting the filter value from the button's data attribute
         const filterValue = button.getAttribute('data-filter');
 
         projects.forEach(function(project) {
-
+            //Getting the category of the project from its data attribute
             const category = project.getAttribute('data-category');
-
+            //Show project if filter is 'all' or matches the project's category
             if (filterValue === 'all' || filterValue === category) {
                 project.style.display = 'block';
             } else {

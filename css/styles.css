@@ -55,3 +55,8 @@ article{
         margin-top: 20px;
     }
 }
+/*For project filters*/
+.filter-btn.active{
+    background-color: rgb(54, 54, 79);
+    color: white;
+}
