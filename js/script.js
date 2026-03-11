@@ -75,3 +75,37 @@ filterButtons.forEach(function(button) {
 
     });
 });
+
+//Selecting the form
+const form = document.querySelector('#contact-form');
+
+//Selecting inputs
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+
+//Selecting message container
+const formMessage = document.querySelector('#form-message');
+
+//Listening for submit event
+form.addEventListener('submit', function(event){
+
+    //Prevent page refresh
+    event.preventDefault();
+
+    //Check inputs
+    if(nameInput.value === '' || emailInput.value === '' || messageInput.value === ''){
+
+        formMessage.textContent = "Please fill in all fields.";
+        formMessage.style.color = "red";
+
+    }
+    else{
+
+        formMessage.textContent = "Message sent successfully!";
+        formMessage.style.color = "green";
+
+        form.reset();
+    }
+
+});
