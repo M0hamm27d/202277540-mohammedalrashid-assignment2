@@ -43,3 +43,29 @@ toggleButton.addEventListener("click",function(){
     }
 });
 
+//Selecting filter buttons
+const filterButtons = document.querySelectorAll('.filter-btn');
+
+//Selecting all projects
+const projects = document.querySelectorAll('.project');
+
+//Loop through buttons
+filterButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+
+        const filterValue = button.getAttribute('data-filter');
+
+        projects.forEach(function(project) {
+
+            const category = project.getAttribute('data-category');
+
+            if (filterValue === 'all' || filterValue === category) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+
+        });
+
+    });
+});
