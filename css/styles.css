@@ -60,3 +60,38 @@ article{
     background-color: rgb(115, 115, 151);
     color: white;
 }
+/*For spacing between filter buttons and projects*/
+.project-filters{
+    margin-bottom: 20px;
+}
+/*For hover effects on buttons and projects*/
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+/*For hover effect on buttons*/
+button:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+/*For hover effect on projects*/
+.project{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*For hover effect on projects*/
+.project:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+/*For fade-in animation on sections*/
+section{
+    animation: fadeIn 0.8s ease-in;
+}
+/*Keyframes for fade-in animation*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
