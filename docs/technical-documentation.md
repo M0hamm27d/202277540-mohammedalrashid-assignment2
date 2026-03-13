@@ -50,10 +50,52 @@ Ensures usability across devices with the new interactive features.
 
 ## 🌟 User Experience (UX)
 
-The site is designed with a **user-first mentality**:
+The site is designed with a **user-first mentality**, focusing on clarity, interactivity, and responsiveness.
 
-* **Visual Comfort:** Dark Mode toggle improves readability in low-light environments. ⚪  
-* **Accessibility:** Semantic tags (`<article>`, `<section>`) support screen readers; form labels are properly linked. ⚪  
-* **Interactivity:** Hover effects make the site feel dynamic and engaging. 🆕  
-* **Usability:** Section filters provide intuitive project exploration without page reloads. 🆕  
-* **Consistency:** Layout adjustments prevent content overlap, maintaining visual stability across devices. 🆕
+### ⚪ Core Experience (Assignment 1)
+
+*
+  **Theme Switching:**
+   * Click the **Theme Toggle button** at the top of the page.
+   * The color scheme changes immediately.
+   * The selected theme is remembered even after refreshing the page.
+
+* **Accessibility:**  
+  Semantic elements such as `<section>` and `<article>` support screen readers.  
+  Responsive images using `max-width: 100%` prevent horizontal scrolling on smaller devices.
+
+* **Personalized Greeting:**  
+  A dynamic greeting message appears at the top of the page based on the user’s local time.
+
+---
+
+### 🆕 Interactive Experience (Assignment 2)
+
+#### 🔹 Step-by-Step Interaction Guide
+
+1. **Viewing Projects**
+   * Scroll to the **Projects section**.
+   * All project cards are displayed by default.
+
+2. **Filtering Projects**
+   * Click on any **filter button** (e.g., HTML, JavaScript, All).
+   * The page updates instantly without reloading.
+   * Only the selected category of projects remains visible.
+
+3. **Hover Feedback**
+   * Move the cursor over **project cards or buttons**.
+   * Elements slightly move upward and display a shadow effect.
+   * This indicates that the element is interactive.
+
+4. **Responsive Usage**
+   * On smaller screens, content automatically stacks vertically.
+   * Users can scroll comfortably without layout breaking or overlapping elements.
+
+---
+
+### 🆕 UX Improvements Introduced
+
+* Reduced layout shifting during hover interactions.
+* Clear visual feedback for clickable elements.
+* Clear validation feedback for input elements.
+* Faster navigation using dynamic filtering instead of page reloads.
